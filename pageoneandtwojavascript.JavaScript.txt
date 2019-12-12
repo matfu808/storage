@@ -1,0 +1,11 @@
+function pageone() {
+var a = document.getElementById('username').value;
+  document.getElementById('placeholder').innerHTML = a;
+  localStorage.setItem("myname",a);
+  location.href="pagetwo.html";
+}
+
+////////////////////This is for pagetwo.html//////////////////////////
+
+var b = localStorage.getItem("myname");
+window.alert(b);
